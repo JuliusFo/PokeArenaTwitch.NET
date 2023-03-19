@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET", "PokeArenaTwitch.NET\PokeArenaTwitch.NET.csproj", "{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeArenaTwitch.NET", "PokeArenaTwitch.NET\PokeArenaTwitch.NET.csproj", "{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Models", "PokeArenaTwitch.NET.Models\PokeArenaTwitch.NET.Models.csproj", "{F2B4EF16-E29B-42D6-93C1-10E939A3B55B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Data", "PokeArenaTwitch.NET.Data\PokeArenaTwitch.NET.Data.csproj", "{F111588F-6B45-4EA0-A78F-9FFB4465D77C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Data.Models", "PokeArenaTwitch.NET.Data.Models\PokeArenaTwitch.NET.Data.Models.csproj", "{B71A6B9C-4F00-4760-ACC5-9671821820E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Services", "PokeArenaTwitch.NET.Services\PokeArenaTwitch.NET.Services.csproj", "{9E418AD1-60DF-4091-9CFD-B6FD41230CE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Modules", "PokeArenaTwitch.NET.Modules\PokeArenaTwitch.NET.Modules.csproj", "{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B4EF16-E29B-42D6-93C1-10E939A3B55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B4EF16-E29B-42D6-93C1-10E939A3B55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B4EF16-E29B-42D6-93C1-10E939A3B55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B4EF16-E29B-42D6-93C1-10E939A3B55B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F111588F-6B45-4EA0-A78F-9FFB4465D77C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F111588F-6B45-4EA0-A78F-9FFB4465D77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F111588F-6B45-4EA0-A78F-9FFB4465D77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F111588F-6B45-4EA0-A78F-9FFB4465D77C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71A6B9C-4F00-4760-ACC5-9671821820E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71A6B9C-4F00-4760-ACC5-9671821820E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71A6B9C-4F00-4760-ACC5-9671821820E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71A6B9C-4F00-4760-ACC5-9671821820E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E418AD1-60DF-4091-9CFD-B6FD41230CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E418AD1-60DF-4091-9CFD-B6FD41230CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E418AD1-60DF-4091-9CFD-B6FD41230CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E418AD1-60DF-4091-9CFD-B6FD41230CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
