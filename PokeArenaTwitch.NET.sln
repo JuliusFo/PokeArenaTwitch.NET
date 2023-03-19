@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Modules", "PokeArenaTwitch.NET.Modules\PokeArenaTwitch.NET.Modules.csproj", "{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Common.Models", "PokeArenaTwitch.NET.Common.Models\PokeArenaTwitch.NET.Common.Models.csproj", "{A373A497-7267-4C18-82C7-6C61FAC56440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET.Data.Configurations", "PokeArenaTwitch.NET.Data.Configurations\PokeArenaTwitch.NET.Data.Configurations.csproj", "{324A8B29-82F1-462D-BB43-CF70C17717F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA6A1A4-3691-4EA4-A011-EBC7DF648C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A373A497-7267-4C18-82C7-6C61FAC56440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A373A497-7267-4C18-82C7-6C61FAC56440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A373A497-7267-4C18-82C7-6C61FAC56440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A373A497-7267-4C18-82C7-6C61FAC56440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{324A8B29-82F1-462D-BB43-CF70C17717F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{324A8B29-82F1-462D-BB43-CF70C17717F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{324A8B29-82F1-462D-BB43-CF70C17717F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{324A8B29-82F1-462D-BB43-CF70C17717F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
