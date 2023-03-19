@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeArenaTwitch.NET", "PokeArenaTwitch.NET\PokeArenaTwitch.NET.csproj", "{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CA1C76-1E23-49F3-BA3A-9D33C2BAE0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C64607CC-EA22-4E68-AE20-E5C78A51E764}
+	EndGlobalSection
+EndGlobal
