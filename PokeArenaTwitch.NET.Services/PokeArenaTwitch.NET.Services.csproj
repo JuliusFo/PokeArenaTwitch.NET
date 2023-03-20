@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PokeArenaTwitch.NET.Data\PokeArenaTwitch.NET.Data.csproj" />
+    <ProjectReference Include="..\PokeArenaTwitch.NET.Models\PokeArenaTwitch.NET.Models.csproj" />
+  </ItemGroup>
+
 </Project>
