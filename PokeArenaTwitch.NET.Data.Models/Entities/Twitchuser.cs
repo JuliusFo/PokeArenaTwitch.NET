@@ -10,17 +10,18 @@
 
         #region Constructor
 
-        public Twitchuser(string displayName, bool kz_Log_Enabled)
+        public Twitchuser(string twitchuser_Id, string displayName, bool kz_Log_Enabled)
         {
             DisplayName = displayName;
             Kz_Log_Enabled = kz_Log_Enabled;
+            Twitchuser_Id = twitchuser_Id;
         }
 
         #endregion
 
         #region Properties
 
-        public decimal Twitchuser_Id { get; set; }
+        public string Twitchuser_Id { get; set; }
 
         public string DisplayName { get; set; }
 

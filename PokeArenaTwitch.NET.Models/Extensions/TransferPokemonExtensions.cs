@@ -9,5 +9,10 @@ namespace PokeArenaTwitch.NET.Models.Extensions
         {
             return new TransferPokemon(entity.SdPokemon_Id, entity.Name, entity.Description, entity.HP, entity.Rarity, entity.Type, entity.ATK);
         }
+
+        public static TransferCatchedPokemon ConvertToTransfer(this CatchedPokemon entity)
+        {
+            return new TransferCatchedPokemon(entity.SdPokemon.ConvertToTransfer(), entity.Pokemon_AmountCatched, entity.Pokemon_AmountOnFightingTeam);
+        }
     }
 }

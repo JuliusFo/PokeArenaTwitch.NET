@@ -10,7 +10,7 @@
 
         #region Constructor
 
-        public Achievements(decimal twitchuser_Id, DateTime lastFight, decimal sdAchievment_Id, SdAchievement sdAchievement, Twitchuser twitchuser)
+        public Achievements(string twitchuser_Id, DateTime lastFight, decimal sdAchievment_Id, SdAchievement sdAchievement, Twitchuser twitchuser)
         {
             Twitchuser_Id = twitchuser_Id;
             LastFight = lastFight;
@@ -25,7 +25,7 @@
 
         public decimal Achievement_Id { get; set; }
 
-        public decimal Twitchuser_Id { get; set; }
+        public string Twitchuser_Id { get; set; }
 
         public DateTime LastFight { get; set; }
 

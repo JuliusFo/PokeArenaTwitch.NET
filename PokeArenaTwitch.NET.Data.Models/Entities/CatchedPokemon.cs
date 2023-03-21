@@ -10,14 +10,12 @@ public class CatchedPokemon
 
     #region Constructor
 
-    public CatchedPokemon(int pokemon_AmountCatched, int pokemon_AmountOnFightingTeam, decimal sdPokemon_Id, decimal twitchuser_Id, SdPokemon sdPokemon, Twitchuser twitchuser)
+    public CatchedPokemon(int pokemon_AmountCatched, int pokemon_AmountOnFightingTeam, decimal sdPokemon_Id, string twitchuser_Id)
     {
         Pokemon_AmountCatched = pokemon_AmountCatched;
         Pokemon_AmountOnFightingTeam = pokemon_AmountOnFightingTeam;
         SdPokemon_Id = sdPokemon_Id;
         Twitchuser_Id = twitchuser_Id;
-        SdPokemon = sdPokemon;
-        Twitchuser = twitchuser;
     }
 
     #endregion
@@ -32,11 +30,11 @@ public class CatchedPokemon
 
     public decimal SdPokemon_Id { get; set; }
 
-    public decimal Twitchuser_Id { get; set; }
+    public string Twitchuser_Id { get; set; }
 
-    public virtual SdPokemon SdPokemon { get; set; }
+    public virtual SdPokemon? SdPokemon { get; set; }
 
-    public virtual Twitchuser Twitchuser { get; set; }
+    public virtual Twitchuser? Twitchuser { get; set; }
 
     #endregion
 

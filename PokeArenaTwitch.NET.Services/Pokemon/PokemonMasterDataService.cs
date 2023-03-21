@@ -8,7 +8,7 @@ using PokeArenaTwitch.NET.Models.Transfer;
 
 namespace PokeArenaTwitch.NET.Services.Pokemon
 {
-    public class PokemonService
+    public class PokemonMasterDataService
     {
         #region Fields
 
@@ -18,7 +18,7 @@ namespace PokeArenaTwitch.NET.Services.Pokemon
 
         #region Constructor
 
-        public PokemonService(AppDbContext db)
+        public PokemonMasterDataService(AppDbContext db)
         {
             this.db = db;
         }
@@ -27,14 +27,14 @@ namespace PokeArenaTwitch.NET.Services.Pokemon
 
         #region Methods
 
-        public async Task<TransferPokemon?> GetPokemonByNameAsync(string pokemonName)
+        public async Task<TransferPokemon?> GetPokemonByNameAsync(string pokemonName, CancellationToken cancellationToken)
         {
             if (string.IsNullOrWhiteSpace(pokemonName))
             {
                 return null;
             }
 
-            SdPokemon? entity = await db.SdPokemon.FirstOrDefaultAsync(p => p.Name == pokemonName);
+            SdPokemon? entity = await db.SdPokemon.FirstOrDefaultAsync(p => p.Name == pokemonName, cancellationToken);
 
             if (entity == null)
             {
