@@ -1,4 +1,4 @@
-﻿namespace PokeArenaTwitch.NET.Modules
+﻿namespace PokeArenaTwitch.NET.Modules.Common
 {
     public static class LogWriter
     {

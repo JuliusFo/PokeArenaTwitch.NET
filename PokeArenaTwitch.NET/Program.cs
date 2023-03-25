@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PokeArenaTwitch.NET.Data;
+using PokeArenaTwitch.NET.Modules.Twitch;
 using PokeArenaTwitch.NET.Services.Pokemon;
 using PokeArenaTwitch.NET.Services.Twitch;
 
-namespace PokeArenaTwitch.NET // Note: actual namespace depends on the project name.
+namespace PokeArenaTwitch.NET
 {
     internal class Program
     {
@@ -17,6 +18,7 @@ namespace PokeArenaTwitch.NET // Note: actual namespace depends on the project n
                 services.AddScoped<TwitchUserService>();
                 services.AddScoped<TwitchAccessService>();
                 services.AddScoped<PokemonMasterDataService>();
+                services.AddScoped<TwitchChatModule>();
             })
             .Build();
 
