@@ -11,4 +11,8 @@
     <ProjectReference Include="..\PokeArenaTwitch.NET.Data.Models\PokeArenaTwitch.NET.Data.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>

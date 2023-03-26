@@ -3,8 +3,8 @@ using PokeArenaTwitch.NET.Common.Models.Codes;
 using PokeArenaTwitch.NET.Common.Models.Constants;
 using PokeArenaTwitch.NET.Data;
 using PokeArenaTwitch.NET.Data.Models.Entities;
-using PokeArenaTwitch.NET.Models.Extensions;
 using PokeArenaTwitch.NET.Models.Transfer;
+using PokeArenaTwitch.NET.Models.Transfer.Extensions;
 
 namespace PokeArenaTwitch.NET.Services.Pokemon
 {

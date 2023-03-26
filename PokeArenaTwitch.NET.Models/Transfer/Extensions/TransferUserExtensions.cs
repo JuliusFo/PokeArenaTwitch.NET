@@ -1,7 +1,6 @@
 ﻿using PokeArenaTwitch.NET.Data.Models.Entities;
-using PokeArenaTwitch.NET.Models.Transfer;
 
-namespace PokeArenaTwitch.NET.Models.Extensions
+namespace PokeArenaTwitch.NET.Models.Transfer.Extensions
 {
     public static class TransferUserExtensions
     {

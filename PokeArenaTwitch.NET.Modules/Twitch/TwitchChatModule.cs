@@ -1,5 +1,5 @@
-﻿using PokeArenaTwitch.NET.Modules.Common;
-using PokeArenaTwitch.NET.Modules.Contracts;
+﻿using PokeArenaTwitch.NET.Models.Contracts;
+using PokeArenaTwitch.NET.Modules.Common;
 using PokeArenaTwitch.NET.Services.Twitch;
 using TwitchLib.Api;
 using TwitchLib.Client;
