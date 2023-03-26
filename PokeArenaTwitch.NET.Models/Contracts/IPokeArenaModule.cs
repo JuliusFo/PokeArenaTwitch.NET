@@ -1,4 +1,4 @@
-﻿namespace PokeArenaTwitch.NET.Modules.Contracts
+﻿namespace PokeArenaTwitch.NET.Models.Contracts
 {
     public interface IPokeArenaModule
     {
