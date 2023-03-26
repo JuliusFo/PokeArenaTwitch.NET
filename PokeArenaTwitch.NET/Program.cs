@@ -22,7 +22,24 @@ namespace PokeArenaTwitch.NET
             })
             .Build();
 
-            Console.WriteLine("Test-Run");
+            Console.WriteLine("=======================");
+            Console.WriteLine("PokeArenaTwitch.NET");
+            Console.WriteLine("=======================");
+
+            string? command = Console.ReadLine();
+
+            if(!string.IsNullOrWhiteSpace(command))
+            {
+                if(command == "exit")
+                {
+                    TwitchChatModule? chatModule = host.Services.GetService<TwitchChatModule>();
+
+                    if(null != chatModule)
+                    {
+                        chatModule.Disconnect();
+                    }
+                }
+            }
         }
     }
 }

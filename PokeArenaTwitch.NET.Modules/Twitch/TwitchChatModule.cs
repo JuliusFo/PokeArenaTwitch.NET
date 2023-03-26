@@ -17,6 +17,7 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
         private readonly TwitchClient twitchclient;
         private readonly TwitchAccessService twitchAccessService;
 
+        private readonly string botName = "p_ArenaBot";
         private readonly string channelName = "Skei7";
 
         private readonly bool automaticreconnect = true;
@@ -37,6 +38,8 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
             twitchAPI = new TwitchAPI();
             twitchAPI.Settings.ClientId = twitchAccessService.GetTwitchClientID();
             twitchAPI.Settings.AccessToken = twitchAccessService.GetTwitchAccessToken();
+
+            Connect();
         }
 
         #endregion
@@ -49,9 +52,9 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
 
         #region Methods
 
-        public void Connect(string bot_name)
+        public void Connect()
         {
-            twitchclient.Initialize(new ConnectionCredentials(bot_name, twitchAccessService.GetTwitchAccessToken()), channel: channelName);
+            twitchclient.Initialize(new ConnectionCredentials(botName, twitchAccessService.GetTwitchAccessToken()), channel: channelName);
             twitchclient.Connect();
 
             twitchclient.OnJoinedChannel += OnJoinedChannel;
