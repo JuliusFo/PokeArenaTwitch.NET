@@ -20,7 +20,7 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
         private readonly string botName = "p_ArenaBot";
         private readonly string channelName = "Skei7";
 
-        private readonly bool automaticreconnect = true;
+        private bool automaticreconnect = true;
         private int reconnectTries = 0;
         private readonly int reconnectTriesMAX = 3;
         private readonly int reconnectWaitTime = 120;
@@ -63,6 +63,7 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
 
         public void Disconnect()
         {
+            automaticreconnect = false;
             twitchclient.Disconnect();
         }
 
