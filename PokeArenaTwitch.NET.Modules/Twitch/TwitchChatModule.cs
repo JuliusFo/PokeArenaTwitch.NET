@@ -1,5 +1,7 @@
-﻿using PokeArenaTwitch.NET.Models.Contracts;
+﻿using PokeArenaTwitch.NET.Models.Commands.Base;
+using PokeArenaTwitch.NET.Models.Contracts;
 using PokeArenaTwitch.NET.Modules.Common;
+using PokeArenaTwitch.NET.Resources;
 using PokeArenaTwitch.NET.Services.Twitch;
 using TwitchLib.Api;
 using TwitchLib.Client;
@@ -25,13 +27,18 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
         private readonly int reconnectTriesMAX = 3;
         private readonly int reconnectWaitTime = 120;
 
+        private readonly IEnumerable<ITwitchCommandResolver> commandResolvers;
+
         #endregion
 
         #region Constructor
 
-        public TwitchChatModule(TwitchAccessService twitchAccessService)
+        public TwitchChatModule(
+            TwitchAccessService twitchAccessService,
+            IEnumerable<ITwitchCommandResolver> commandResolvers)
         {
             this.twitchAccessService = twitchAccessService;
+            this.commandResolvers = commandResolvers;
 
             twitchclient = new TwitchClient();
 
@@ -59,6 +66,7 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
 
             twitchclient.OnJoinedChannel += OnJoinedChannel;
             twitchclient.OnDisconnected += OnDisconnected;
+            twitchclient.OnMessageReceived += OnMessageReceived;
         }
 
         public void Disconnect()
@@ -94,6 +102,26 @@ namespace PokeArenaTwitch.NET.Modules.Twitch
                     twitchclient.Reconnect();
                 }
             }
+        }
+
+        private async void OnMessageReceived(object? sender, OnMessageReceivedArgs e)
+        {
+            if(e.ChatMessage == null || string.IsNullOrWhiteSpace(e.ChatMessage.Message))
+            {
+                return;
+            }
+
+            ITwitchCommandResolver? resolver = commandResolvers.FirstOrDefault(r => e.ChatMessage.Message.StartsWith(r.CommandStart));
+
+            if(resolver == null)
+            {
+                twitchclient.SendMessage(channelName, string.Format(MessageResources.UnknownCommand, e.ChatMessage.Username));
+                return;
+            }
+
+            CommandResult commandResult = await resolver.Resolve(e.ChatMessage.Message);
+
+            twitchclient.SendMessage(channelName, commandResult.Result);
         }
 
         #endregion

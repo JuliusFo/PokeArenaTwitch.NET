@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Common\" />
     <Folder Include="Extensions\" />
   </ItemGroup>
 

@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PokeArenaTwitch.NET.Data;
+using PokeArenaTwitch.NET.Models.Commands.Common;
+using PokeArenaTwitch.NET.Models.Contracts;
 using PokeArenaTwitch.NET.Modules.Twitch;
 using PokeArenaTwitch.NET.Services.Pokemon;
 using PokeArenaTwitch.NET.Services.Twitch;
@@ -19,6 +21,7 @@ namespace PokeArenaTwitch.NET
                 services.AddScoped<TwitchAccessService>();
                 services.AddScoped<PokemonMasterDataService>();
                 services.AddScoped<TwitchChatModule>();
+                services.AddTransient<ITwitchCommandResolver, VersionCommandResolver>();
             })
             .Build();
 

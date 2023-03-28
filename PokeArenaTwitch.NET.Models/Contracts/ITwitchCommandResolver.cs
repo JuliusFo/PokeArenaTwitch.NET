@@ -2,10 +2,10 @@
 
 namespace PokeArenaTwitch.NET.Models.Contracts
 {
-    public interface ITwitchCommandSolver
+    public interface ITwitchCommandResolver
     {
         public string CommandStart { get; }
 
-        public Task<CommandResult> Execute(string commandParameter);
+        public Task<CommandResult> Resolve(string commandParameter);
     }
 }
