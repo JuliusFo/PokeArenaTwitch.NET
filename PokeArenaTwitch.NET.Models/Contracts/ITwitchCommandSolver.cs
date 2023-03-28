@@ -1,4 +1,4 @@
-﻿using PokeArenaTwitch.NET.Models.Commands.Common;
+﻿using PokeArenaTwitch.NET.Models.Commands.Base;
 
 namespace PokeArenaTwitch.NET.Models.Contracts
 {

@@ -1,4 +1,4 @@
-﻿namespace PokeArenaTwitch.NET.Models.Commands.Common
+﻿namespace PokeArenaTwitch.NET.Models.Commands.Base
 {
     public class CommandResult
     {
